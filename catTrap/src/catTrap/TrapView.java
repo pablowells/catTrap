@@ -53,6 +53,11 @@ public class TrapView extends JFrame
 		
 	}
 	
+	private void createRightPanel()
+	{
+		
+	}
+	
 	private void createLeftPanel()
 	{
 		leftPanel = new JPanel();
