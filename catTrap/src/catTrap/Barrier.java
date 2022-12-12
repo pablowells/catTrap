@@ -1,17 +1,15 @@
 package catTrap;
 
-public class Cat extends PlayPiece {
+public class Barrier extends PlayPiece {
 
+	private TrapModel model;
 	private int row;
 	private int column;
-	private TrapModel model;
 	
-	Cat(TrapModel model) 
+	Barrier(TrapModel model) 
 	{
 		this.model = model;
-
 	}
-	
 	@Override
 	public int getRow() 
 	{
@@ -41,18 +39,11 @@ public class Cat extends PlayPiece {
 				}
 			}
 		}
-		return column;
-	}
-	
-	public void catMove()
-	{
-		Cat tempCat = (Cat) model.grid[getRow()][getCol()];
-		model.grid[getRow()][getCol()] = null;
-		model.grid[getRow()+1][getCol()] = tempCat;
+		return column;	
 	}
 	
 	public String toString()
 	{
-		return "catt";
+		return "barr";
 	}
 }
